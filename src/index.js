@@ -561,7 +561,7 @@ export default class extends PureComponent {
         style={{
           display: "block",
           background: this.props.backgroundColor,
-          touchAction: "none",
+          touchAction: this.props.disabled ? "auto" : "none",
           width: this.props.canvasWidth,
           height: this.props.canvasHeight,
           ...this.props.style
